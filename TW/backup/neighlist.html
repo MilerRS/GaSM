@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<link rel="stylesheet" type="text/css" href="theheader.css">
+	<style>
+		a{
+			text-decoration: none;	
+			color:#000000;
+		 }
+		 .NeighbourhoodList{
+		 	display:flex;
+		 	flex-wrap: wrap;
+		 	justify-content: center;
+		 }
+		.NeighbourhoodList img{
+		 	width:15em;
+		 	height: 15em;
+    		-webkit-animation: rubberBand 0.9s;
+
+
+
+		 }
+
+
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+		 
+		 .NeighbourhoodList div a {
+		 	width:15em;
+		 	height:15em;
+		 	display:flex;
+		 	flex-direction: column;
+		 	align-items: center;
+		 	font-weight: bold;
+		 	padding: 20px;
+		 }
+
+		 .NeighbourhoodList div img{
+		 	transition: opacity 0.2s,transform 0.2s;
+		 }
+
+		 .NeighbourhoodList div img:hover{
+		 	opacity: 0.7;
+		 	transform: scale(1.025);
+		 	border-left-width: 6px;
+    		border-left-color: #EBD42A;
+    		border-left-style: solid;
+    		border-top-left-radius: 10px;
+    		border-bottom-width: 6px;
+    		border-bottom-color: #EBD42A;
+    		border-bottom-style: solid;
+    		border-bottom-left-radius:10px; 
+    		border-bottom-right-radius: 10px;
+		 }
+		p{
+		 	background-color: yellow;
+		 	opacity: 0.75;
+		 	text-align: center;
+
+		 }
+
+		 .LastImage{
+			margin-right: 68em;
+		 }
+
+	</style>
+	<title>Smart Garbage Collector</title>
+</head>
+<body>
+	<header>
+		<a href="login"><div class="loginSection"><img src="usericon.png" alt="generic user icon" id="genericUserIcon"><div class="loginText">Authorized login</div></div></a>
+		<a href="/TW"><img src="Logo.png" alt="back to frontpage" id="theLogo" class="tl"></a>
+	</header>
+	<div class="title"><h1><b>Let's get you started</b></h1></div><hr>
+	<p>Select one of the neighbourhoods from Iasi</p>
+	<div class="NeighbourhoodList">
+		<div><a href="cityinfo.php?city=Dacia">Dacia<img src="Images/Dacia.jpg" alt="Dacia neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Pacurari">Pacurari<img src="Images/Pacurari.jpg" alt="Pacurari neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Canta">Canta<img src="Images/Canta.jpg" alt="Canta neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Alexandru">Alexandru cel Bun<img src="Images/Alexandru.jpg" alt="Alexandru neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Centru">Centru<img src="Images/Centru.jpg" alt="Centru neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Copou">Copou<img src="Images/Copou.jpg" alt="Copou neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=CUG">CUG<img src="Images/Cug.jpg" alt="Cug neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Frumoasa">Frumoasa<img src="Images/Frumoasa.jpg" alt="Frumoasa neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Galata">Galata<img src="Images/Galata.jpg" alt="Galata neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Gara">Gara<img src="Images/Gara.jpg" alt="Gara neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Mircea">Mircea Cel Batran<img src="Images/Mircea.jpg" alt="Mircea neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Nicolina">Nicolina<img src="Images/Nicolina.jpg" alt="Nicolina neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Podu_Ros">Podu Ros<img src="Images/Podu_Ros.jpg" alt="Podu Ros neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Targu_Cucu">Targu Cucu<img src="Images/Targu_Cucu.jpg" alt="Targu Cucu neighbourhood"></a></div>
+		<div><a href="cityinfo.php?city=Tatarasi">Tatarasi<img src="Images/Tatarasi.jpg" alt="Tatarasi neighbourhood"></a></div>
+		<div class="LastImage"><a href="cityinfo.php?city=Tudor">Tudor Vladimirescu<img src="Images/Tudor.jpg" alt="Tudor Vladimirescu neighbourhood"></a></div>
+		
+	</div>

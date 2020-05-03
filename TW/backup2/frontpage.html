@@ -1,0 +1,170 @@
+		<!DOCTYPE html>
+		<html lang=en>
+		<head>
+			<style>
+				body{
+					background-image: url("Images/bckg.png");
+					font-family: verdana;
+					}
+				.title{
+					text-align: center;
+					}
+				.shortDescription{
+					width:30%;
+					margin:auto;
+					font-size: 120%;
+					background-color: yellow;
+					border:2px solid black;
+				}
+				a{
+					text-decoration: none;	
+					color:#000000;
+				}
+				.TheReferences{
+					display:flex;
+					flex-direction: column;
+					align-items: center;
+					flex-wrap: wrap;
+					
+					
+				}
+				.stickyReference a {
+					font-weight: bold;
+					color:#DC143C;
+					font-size: 150%;
+				}
+				.references{
+					font-weight: bold;
+					font-size: 120%;
+					transition: transform 1s;
+				}
+				.references:hover{
+					transform:scale(1.5);
+				}
+				.stickyReference{
+					display:inline-block;
+					margin-left: 40%;
+					margin-bottom: 10px;
+					font-size: 120%;
+					position:sticky;
+					top:0;
+					z-index: 1;
+					transition: transform 1s;
+				}
+				.stickyReference:hover{
+					transform:scale(1.5);
+				}
+
+				.How{
+					width:5em;
+					height:5em;
+				}
+				.Stats{
+					width: 3em;
+					height: 3em;
+				}
+				.Start{
+					width: 2em;
+					height: 2em;
+				}
+				.references a{
+					display: flex;
+					align-items: center;
+				} 
+
+
+				#displaced{
+					margin-right: 2.7em;
+				}
+
+
+
+				.GretaQuoteWithImage{
+					border:5px dashed #2980b9;
+					width:50em;
+					height:20em;
+					position: relative;
+					left:10%;
+					top:5em;
+				}
+
+				.quoteImage{
+					max-width: 100%;
+					max-height: 100%;
+					position:absolute;
+					right:0%;
+				}
+				.theQuote{
+					font-style:italic;
+					font-size: 110%;
+					position: absolute;
+					width:50%;
+					top:30%;
+					left:10%;
+				}
+
+				.TheresaQuoteWithImage{
+					border:5px dashed #B22222;
+					width:50em;
+					height:20em;
+					position:relative;
+					left:25%;
+					top:12em;
+					bottom: 20em;
+
+				}
+				@media screen and (max-width:1024px){
+				.TheresaQuoteWithImage{
+					border:5px dashed black;
+					width:50em;
+					height:20em;
+					position:relative;
+					left:15%;
+					top:12em;
+					bottom: 20em;
+
+				}
+			}
+
+				.loginSection{
+					border:1px solid #065fd4;
+					color:#065fd4;
+					font-weight: bold;
+					font-family: sans-serif;
+					display:inline-flex;
+					height:2em;
+					width:10em;
+					
+
+				}
+				#genericUserIcon{
+					max-width: 30%;
+					max-height: 80%;
+				}
+			</style>
+		<title>Smart Garbage Collector</title></head>
+		<body>
+			<header><a href="login"><div class="loginSection"><img src="Images/usericon.png" alt="generic user icon" id="genericUserIcon"><div class="loginText">Authorized login</div></div></a></header>
+			<main>
+				<div class="title"><h1><b>Your smart garbage monitor</b></h1></div><hr>
+				
+					<ul class="shortDescription">
+						<li>Keeping our city clean toghether!</li>
+						<li>All-time reports!</li>
+						<li>Learning how to be responsible!</li>
+					</ul>
+					<br>
+					<div class="stickyReference"><a href="/TW/neighlist.html">Get started! <img src="Images/start.png" class="Start" alt="a flag"></a></div><br><br>
+					<div class="TheReferences">
+						<div class="references"><a href="/localhost/TW/garbage.php">Learn how to do it!<img src="Images/How.png" class="How" alt="man recycling"></a></div><br><br>
+						<div class="references" id="displaced"><a href="/localhost/TW/garbage.php">Check the statistics!<img src="Images/stonks.png" class="Stats" alt="stonks guy"></a></div><br><br>
+					</div>
+						
+
+					<div class="GretaQuoteWithImage"><p class="theQuote">"Right now we are living in the beginning of a climate and ecological breakdown, and we cannot look away from this crisis anymore.-Greta Thundberg"</p><img src="Images/greta.png" class="quoteImage" alt="Quote from Greta Thundberg"></div>
+
+					<div class="TheresaQuoteWithImage"><p class="theQuote">"I only feel angry when i see waste. When I see people throwing away things we could use.-Mother Teresa"</p><img src="Images/teresa.jpg" class="quoteImage" alt="Quote from Mother Teresa"></div>
+				
+			</main>
+		</body>
+		</html>
