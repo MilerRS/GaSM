@@ -1,0 +1,269 @@
+/* NAV BAR LOGO_BACK BUTTON*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    background-color: #00b300;
+}
+
+.logo {
+    size: 10px;
+    position: absolute;
+    left: 8%;
+}
+
+.back-button {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 5%;
+    display: inline-block;
+}
+
+.title {
+    font-family: Verdana;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color: antiquewhite;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+
+.MPbutton {
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 42px;
+    border: 2px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2px 6px;
+    text-decoration: none;
+    position: relative;
+}
+
+.MPbutton:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+
+.MPbutton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* END NAV BAR*/
+
+.main {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.free {
+    width: 50%;
+    height: 80vh;
+    background-image: url(../Images/recycle1.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.content {
+    width: 40vw;
+    height: 65vh;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    resize: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 3vh;
+}
+
+form {
+    width: 80%;
+}
+
+.forgot-link {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.forgot-link a {
+    color: black;
+    font-weight: bold;
+}
+
+.input-box {
+    width: 100%;
+    height: 25%;
+    border: 2px solid #00b300;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn {
+    margin-top: 8%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    background-color: #00b300;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+.submit-button:hover {
+    background-color: #7365ab;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: #00b300;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input-box {
+    /*width: 100%;
+    height: 25%;
+    border: 2px solid #462BB1;*/
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-box:focus {
+    border: 2px solid #462BB1;
+}
+
+@media screen and (max-width: 320px) and (max-height: 568px) {
+    .logo {
+        display: none;
+    }
+    .free {
+        display: none;
+    }
+    .content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) {
+    .logo {
+        top: 6px;
+        left: 6px;
+    }
+    .title {
+        font-size: 12px;
+    }
+    .MPbutton {
+        border-radius: 10px;
+        border: 1px solid #ffaa22;
+        font-size: 7px;
+        padding: 3px 3px;
+        height: 45px;
+        width: 35px;
+        text-align: center;
+    }
+    .free {
+        display: none;
+    }
+    .content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 411px) and (max-height: 823px) {
+    .logo {
+        top: 6px;
+        left: 6px;
+    }
+    .title {
+        font-size: 12px;
+    }
+    .MPbutton {
+        border-radius: 10px;
+        border: 1px solid #ffaa22;
+        font-size: 7px;
+        padding: 3px 3px;
+        height: 45px;
+        width: 35px;
+        text-align: center;
+    }
+    .free {
+        display: none;
+    }
+    .content {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) and (min-height: 824px) and (max-height: 1024px) {
+    .title {
+        font-size: 20px;
+    }
+    .MPbutton {
+        border-radius: 40px;
+        border: 1px solid #ffaa22;
+        font-size: 10px;
+        padding: 3px 3px;
+        text-align: center;
+    }
+    .content {
+        width: 60%;
+        height: 50hv;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (min-height: 1025px) and (max-height: 1366px) {
+    .title {
+        font-size: 24px;
+        padding: 2px 6px;
+    }
+    .MPbutton {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+    .content {
+        width: 60%;
+        height: 50vh;
+    }
+}

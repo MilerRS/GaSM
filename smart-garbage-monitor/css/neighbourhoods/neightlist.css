@@ -1,0 +1,241 @@
+body {
+    background-image: url("../../Images/bckg.png");
+    font-family: verdana;
+}
+
+
+/* NAV BAR LOGO_BACK BUTTON*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    background-color: #00b300;
+}
+
+.logo {
+    size: 10px;
+    position: absolute;
+    left: 8%;
+}
+
+.back-button {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 5%;
+    display: inline-block;
+}
+
+.title {
+    font-family: Verdana;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color: antiquewhite;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+
+.MPbutton {
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 42px;
+    border: 2px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2px 6px;
+    text-decoration: none;
+    position: relative;
+}
+
+.MPbutton:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+
+.MPbutton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* END NAV BAR*/
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.NeighbourhoodList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.NeighbourhoodList img {
+    width: 15em;
+    height: 15em;
+    -webkit-animation: rubberBand 0.9s;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+@-webkit-keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.NeighbourhoodList div img:hover {
+    opacity: 0.7;
+    transform: scale(1.025);
+    border-left-width: 6px;
+    border-left-color: #EBD42A;
+    border-left-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-width: 6px;
+    border-bottom-color: #EBD42A;
+    border-bottom-style: solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.NeighbourhoodList div a {
+    width: 15em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding: 25px;
+}
+
+p {
+    background-color: yellow;
+    opacity: 0.75;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media screen and (max-width: 320px) and (max-height: 568px) {
+    .logo {
+        display: none;
+    }
+    .title {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+    .MPbutton {
+        font-size: 4px;
+        padding: 2px 6px;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 414px) and (max-height: 736px) {
+    .logo {
+        top: 6px;
+        left: 6px;
+    }
+    .title {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+    .MPbutton {
+        font-size: 6px;
+        padding: 2px 6px;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 414px) and (min-height: 737px) and (max-height: 823px) {
+    .logo {
+        top: 6px;
+        left: 6px;
+    }
+    .title {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+    .MPbutton {
+        font-size: 6px;
+        padding: 2px 6px;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) and (min-height: 824px) and (max-height: 1024px) {
+    .title {
+        font-size: 24px;
+        padding: 2px 6px;
+    }
+    .MPbutton {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+    .NeighbourhoodList div a {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (min-height: 1025px) and (max-height: 1366px) {
+    .title {
+        font-size: 28px;
+        padding: 2px 6px;
+    }
+    .MPbutton {
+        font-size: 15px;
+        padding: 2px 6px;
+    }
+    .NeighbourhoodList div a {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

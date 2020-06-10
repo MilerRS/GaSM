@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/neighinfo/NeighInfoStyle.css">
+
+	
+
+	<title> GaSM</title>
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+			<a href="../">
+				<img src=../Images/LogoHelp.png alt="Logo unavailable" height="70" width="80"></a>
+			</div>
+			<div class="title">
+				<span id="neighbourhood"></span>
+			</div>
+			<div class="back-button">
+				<a href="https://smart-garbage-monitor.herokuapp.com/login/login.html" class="MPbutton">Authorized login</a>
+			</div>
+		</nav>
+
+		<hr>
+
+		<div id="theStatistics">
+
+			<div id="last">The last time we checked...
+				<ul id="lastMonth">
+					<li>245 paper collected</li>
+					<li>300 glass collected</li>
+					<li>550 mixed collected</li>
+					<li>454 plastic collected</li>
+			</ul>
+		</div>
+
+		<p id="place">Holds 9-th place regarding thrash recycled!<br>♻️</p>
+
+		<div id="alltime">Since the birth of GaSM...
+			<ul id ="all">
+				<li>765 paper collected</li>
+				<li>654 glass collected</li>
+				<li>788 mixed collected</li>
+				<li>953 plastic collected</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div id="coords">Not pleased with a place? Point right at it!<br> 👇</div>
+	<input type = "hidden" id="latValue" value="">
+	<input type = "hidden" id="lngValue" value="">
+	<button id="theButton" type="button" onclick=sendCoords()>submit</button>
+
+	<div id="map"></div>
+
+
+	<div id="theForm">
+		<form action="https://smart-garbage-monitor.herokuapp.com/rest/rest.php/saveComment" method="post">
+			<label>Still not pleased? Write a small complaint: </label><br>
+			<label for="name">Your name:</label>
+			<input type="text" id="name" maxlength="20"><br>
+			<label for="comment">Your comment:</label>
+			<input type="text" id="comment" maxlength="100"><br>
+			<input type="hidden" id="neighbourhoodName" name="neighbourhood" value=neighbourhoodName>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<div id="theComments">
+		<h2>Other residents have said...</h2><br>
+		<hr>
+
+	</div>
+	<script src="../js/neighinfo/NeighbourhoodCoords.js"></script>
+	<script src="../js/neighinfo/script.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXFrIlAJ6Qgvu5y23Q7zC7xNMjO-Er4m4&callback=initMap">
+</script>
+
+
+</body>
+
+</html>
+
+
+

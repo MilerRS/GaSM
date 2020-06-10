@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="help.css">
+    <title>Stats</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="../">
+                <img src=../Images/LogoHelp.png alt="Logo unavailable" height="70" width="80"></a>
+        </div>
+        <div class="title">
+            <span>INFORMATII DESPRE RECICLARE</span>
+        </div>
+        <div class="back-button">
+            <a href="../" class="MPbutton">BACK TO MAIN PAGE</a>
+        </div>
+    </nav>
+
+    <section class="main-wrapper">
+        <div class="btn-wrapper">
+
+            <div class="stats-container">
+                <a href="#content-area" class="plastic Addbtn" onclick="showplastic()">PLASTIC</a>
+            </div>
+
+            <div class="stats-container">
+                <a href="#content-area" class="metal Addbtn" onclick="showmetal()">METAL&BATERII&ELECTRONICE</a>
+            </div>
+
+            <div class="stats-container">
+                <a href="#content-area" class="sticla Addbtn" onclick="showsticla()">STICLA</a>
+            </div>
+
+            <div class="stats-container">
+                <a href="#content-area" class="hartie Addbtn" onclick="showhartie()">HARTIE</a>
+            </div>
+
+            <div class="stats-container">
+                <a href="#content-area" class="organic Addbtn" onclick="showorganic()">ORGANIC</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="wrapper-content" id="content-area"></div>
+        </div>
+    </section>
+
+    <script src="content-area.js"></script>
+</body>
+
+</html>

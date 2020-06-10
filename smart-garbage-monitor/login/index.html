@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/login/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="../">
+                <img src=../Images/LogoHelp.png alt="Logo unavailable" height="70" width="80"></a>
+        </div>
+        <div class="title">
+            <span>Login Garbage Smart Monitor</span>
+        </div>
+        <div class="back-button">
+            <a href="../" class="MPbutton">BACK TO MAIN PAGE</a>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="free">
+        </div>
+        <div class="content">
+            <h1>Login</h1>
+            <form>
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input id="userLogin" class="input-box" type="text" placeholder="Username..." required><br><br>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input id="passLogin" class="input-box" type="password" placeholder="Password..." required><br><br>
+                </div>
+
+                <div class="forgot-link">
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </div>
+
+                <div class="btn">
+                    <input class="submit-button" onClick="loginFunction()" type="reset" value="LOG IN">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/login/login.js"></script>
+</body>
+
+</html>
